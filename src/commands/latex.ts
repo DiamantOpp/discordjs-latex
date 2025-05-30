@@ -26,9 +26,9 @@ module.exports = {
 
         const { data, info } = await sharp('latest.png').raw().toBuffer({ resolveWithObject: true });
         for (let i = 0; i < data.length; i += info.channels) {
-            data[i  ] = 0xf2;
-            data[i+1] = 0xd9;
-            data[i+2] = 0xcf;
+            data[i  ] = 0xff;
+            data[i+1] = 0x00;
+            data[i+2] = 0x4f;
         }
 
         await sharp(data, {raw: {width: info.width, height: info.height, channels: info.channels}}).png().toFile('latest.png');
