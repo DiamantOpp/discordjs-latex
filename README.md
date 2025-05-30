@@ -1,5 +1,5 @@
 # User-installable Discord Bot
-This is a very basic user-installable Discord bot with an AI-based chatbot command.
+This is a very basic user-installable Discord bot that implements a LaTeX feature.
 
 # Running
 1. Prerequisites
